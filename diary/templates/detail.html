@@ -1,0 +1,13 @@
+{%extends "base.html"%}
+{%load static%}
+{%block title%}일기 보기{%endblock%}
+{%block link%}{%static 'css/base.css'%}{%endblock%}
+{%block content%}
+<div class = 'detail_container'>
+    <h2>{{diary.title}}</h2>
+    <h3>{{diary.pub_date}} {{diary.weather}}</h3>
+    <img src="{{diary.photo.url}}" class="detail_img" alt="안나와요" />
+    <p>{{diary.body}}</p>
+    <a href = "{%url 'delete' diary.id%}">삭제하기</a>
+</div>
+    {%endblock%}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "{%block link%}{%endblock%}">
+    <title>{%block title%}{%endblock%}</title>
+    {%load socialaccount%}
+    {%providers_media_js%}
+</head>
+<body>
+    <div class = "header">
+        <div class = "base_button">
+            <a href="http://127.0.0.1:8000/post/" class="base_menu">일기쓰기</a></li>
+            <a href="http://127.0.0.1:8000/" class="base_menu">일기장</a></li>
+        </div>   
+        <div class = "title">
+            <a href="http://127.0.0.1:8000/" class="title">은서의 DIARY 🐾</a>
+        </div>
+        <div>
+            <a href = "{%provider_login_url 'google'%}" class = "social_login">구글 로그인</a>
+        </div>
+    </div>
+    {%block content%}
+    {%endblock%}
+    </body>
+    </html>

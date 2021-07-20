@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'BMHANNAPro';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Cafe24Oneprettynight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GyeonggiBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bareun_hipi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_01@1.0/Bareun_hipi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* base.html */
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 11vh;
+    background: #7296ba;
+}
+
+.body {
+    height: 80%;
+}
+
+.base_menu, .social_login {
+    font-family: 'Cafe24Oneprettynight';
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.base_menu:hover, .social_login:hover {
+    color: #181c21;
+}
+
+
+.title {
+    font-family: 'BMHANNAPro';
+    font-size: 40px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+
+
+
+/* home.html */
+.home_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 87vh;
+    background: #e1ecfa;
+    align-items: center;
+}
+
+.home_main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.home_body {
+    margin: 150px 50px;
+    background: #FFFFFF;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'GyeonggiBatang';
+    font-weight: bold;
+    text-align: center;
+}
+
+.home_body a {
+    text-decoration: none;
+}
+
+.home_body a:link, .home_body a:visited {
+    text-decoration: none;
+    color: #8f8f8f;
+}
+
+.home_body a:hover {
+    color: #7298ba;
+}
+
+.somenail {
+    width: 250px;
+    height: 250px;
+}
+
+#home_nav {
+    font-family: 'Cafe24Oneprettynight';
+    font-size: 20px;
+}
+
+
+
+
+
+/* detail.html */
+.detail_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 87vh;
+    background: #e1ecfa;
+    align-items: center;
+}
+
+.detail_container h2 {
+    font-family: 'Bareun_hipi';
+    font-size: 40px;
+    font-weight: bold;
+    color: #FF6F61;
+}
+
+.detail_container h3 {
+    font-family: 'Bareun_hipi';
+    font-size: 20px;
+    color: #FF6F61;
+}
+
+.detail_img {
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+}
+
+.detail_container p {
+    font-family: 'GyeonggiBatang';
+    font-size: 20px;
+    font-weight: bold;
+    color: #181c21;
+}
+
+.detail_container a{
+    text-decoration: none;
+    font-family: 'BMHANNAPro';
+    padding: 4px;
+    border: outset 2px #65849e;
+}
+
+
+.detail_container a:link, .detail_container a:visited {
+    text-decoration: none;
+    color: #65849e;
+}
+
+.detail_container a:hover {
+    color: #FFFFFF;
+}
+
+
+
+
+
+.post_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 87vh;
+    background: #e1ecfa;
+    align-items: center;
+}
+
+.post_container h2 {
+    margin-top: 50px;
+    font-family: 'Cafe24Oneprettynight';
+    font-size: 30px;
+    font-weight: bold;
+    color: #181c21;
+}
+
+.post_form input::placeholder, .post_form textarea::placeholder{
+    font-family: 'GyeonggiBatang';
+}
+
+

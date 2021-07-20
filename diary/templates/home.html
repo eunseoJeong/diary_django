@@ -1,0 +1,34 @@
+{%extends "base.html"%}
+{%load static%}
+{%load socialaccount%}
+{%providers_media_js%}
+{%block title%}일기장{%endblock%}
+{%block link%}{%static 'css/base.css'%}{%endblock%}
+{%block content%}
+
+<div class = "home_container">
+    <div class = "home_main">
+            {%for a in diary%}
+            <div class = "home_body">
+                <p><img src="{{a.photo.url}}" class = "somenail" alt="안나와요" /></p>
+                <p>{{a.title}}</p>
+                <a href="{%url 'detail' a.id%}">내용 보기</a>
+            </div>
+            {%endfor%}
+        </div>
+
+        <div id = 'home_nav'>
+            {%if diary.has_previous%}
+                <a href = '?page={{diary.previous_page_number}}'> < </a>
+            {%endif%}
+
+            <span>{{diary.number}}</span>
+            <span>/</span>
+            <span>{{diary.paginator.num_pages}}</span>
+
+            {%if diary.has_next%}
+                <a href = '?page={{diary.next_page_number}}'> > </a>
+            {%endif%}
+        </div>
+    </div>
+{%endblock%}
